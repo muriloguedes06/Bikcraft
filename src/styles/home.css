@@ -1,0 +1,77 @@
+#home {
+  display: flex;
+  align-items: center;
+  background: #000;
+  min-height: calc(100vh - 96px);
+}
+
+#cta {
+  width: 543px;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  text-align: left;
+}
+
+#cta .title {
+  color: white;
+  font-weight: 600;
+  width: 512px;
+  font-size: 64px;
+}
+
+#cta .title span {
+  color: #ffbb00;
+}
+
+#cta .sub-title {
+  display: flex;
+  color: #b2b2b2;
+  width: 513px;
+  height: 144px;
+  font-size: 24px;
+  margin-top: 5%;
+}
+
+.btn-bike-select {
+  display: flex;
+  background: #ffbf00;
+  text-decoration: none;
+  color: #332200;
+  border-radius: 5px;
+  width: 216px;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  will-change: transform, box-shadow;
+  transform: scale(1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out,
+    background 0.3s ease-out;
+}
+
+.btn-bike-select:hover {
+  transform: scale(1.05) translateY(-1px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
+}
+
+.btn-bike-select:active {
+  transform: scale(0.97) translateY(1px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
+}
+
+#img-intro {
+  display: flex;
+  margin: auto;
+}
+
+.img-intro {
+  display: flex;
+  margin: auto;
+  transition: transform 0.6s ease-in-out;
+  transform-origin: center;
+}
+
+.img-intro:hover {
+  transform: rotateY(180deg) scale(1.05);
+}

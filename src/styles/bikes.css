@@ -1,0 +1,65 @@
+/* ======= Seção de bikes ======= */
+
+#items {
+  min-height: calc(100vh - 96px);
+  padding: 100px 100px 80px; /* top 100px como o seu margin anterior */
+}
+
+#items .title {
+  position: relative;
+  margin: 0 0 40px 0;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+#items .title span {
+  color: #ffbb00;
+}
+
+/* Grid com os cards das bikes */
+.bikes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 colunas no desktop */
+  gap: 32px;
+}
+
+/* Cada card de bike (imagem + nome + preço) */
+.bike-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Imagem da bike (reaproveitando sua classe .items-bikes) */
+.items-bikes {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+
+  /* animação que você já tinha */
+  will-change: transform, box-shadow;
+  transform: scale(1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out,
+    background 0.3s ease-out;
+}
+
+.bike-card:hover .items-bikes {
+  transform: scale(1.02) translateY(-1px);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.45);
+}
+
+.bike-name {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111111;
+}
+
+.bike-price {
+  margin-top: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #595959;
+}

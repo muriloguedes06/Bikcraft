@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("home.css");
+@import url("bikes.css");
+@import url("technology.css");
+@import url("partners.css");
+@import url("testimonials.css");
+@import url("security.css");
+@import url("footer.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  height: 96px;
+  justify-content: space-between;
+  background: #000000ff;
+  position: sticky;
+  z-index: 1000;
+  box-shadow: 1px 1px 1px rgb(153, 153, 153);
+}
+
+#navbar {
+  display: flex;
+  gap: 100px;
+  margin: auto 220px;
+  justify-content: center;
+}
+
+#nav-list {
+  display: flex;
+  gap: 25px;
+  flex-direction: row;
+  margin: auto;
+  font-weight: 500;
+}
+
+#title {
+  display: flex;
+  color: #ffffff;
+  margin: auto 10%;
+}
+
+.nav-item a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.5s;
+}
+
+.nav-item a:hover {
+  color: #ffffffc4;
+}
+
+.amarelo {
+  color: #ffbb00;
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 0 1.5rem;
+  }
+
+  #nav-list {
+    gap: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  #home {
+    padding: 2rem 1.5rem;
+  }
+
+  #cta {
+    margin-left: 0;
+    margin-bottom: 0;
+    max-width: 100%;
+  }
+
+  #home .title {
+    font-size: 3rem;
+    max-width: 100%;
+  }
+
+  #home .sub-title {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .img-intro {
+    max-width: 420px;
+  }
+
+  #items {
+    padding: 80px 40px 60px;
+  }
+
+  #items .title {
+    margin-left: 0;
+  }
+
+  .bikes-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 colunas */
+    gap: 24px;
+  }
+
+  .items-bikes {
+    max-width: 100%;
+  }
+
+  #technology-items {
+    padding: 3rem 1.5rem;
+  }
+
+  #technology-items .sub-title {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .prices-wrapper {
+    gap: 24px;
+  }
+
+  .price-card {
+    padding: 24px 24px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    gap: 0.75rem;
+  }
+
+  #title {
+    margin: 0;
+  }
+
+  #navbar {
+    margin: 0;
+  }
+
+  #nav-list {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #home {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  #cta {
+    text-align: center;
+  }
+
+  #home .title {
+    font-size: 2.4rem;
+  }
+
+  #home .sub-title {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .btn-bike-select {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .img-intro {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+
+  #items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 3rem 1rem;
+  }
+
+  #items .title {
+    margin: 0 0 1.5rem 0;
+  }
+
+  .items-bikes {
+    width: 100%;
+    max-width: 360px;
+    margin-top: 1rem;
+  }
+
+  #technology-items .description {
+    display: block;
+    margin-top: 0.5rem;
+    width: 350px;
+  }
+
+  #technology-items .select-model {
+    margin-top: 7rem;
+  }
+
+  #technology-items {
+    align-items: flex-start;
+  }
+
+  #technology-items .title {
+    margin-left: 0;
+  }
+
+  #technology-items .sub-title {
+    font-size: 2rem;
+  }
+
+  .features {
+    margin-top: 2rem;
+  }
+
+  #features-list {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .partner {
+    padding: 16px 0;
+  }
+
+  .prices-wrapper {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .price-card {
+    width: 100%;
+  }
+
+  #items {
+    padding: 60px 20px 60px;
+    text-align: center;
+  }
+
+  #items .title {
+    margin-bottom: 32px;
+    font-size: 2.2rem;
+  }
+
+  .bikes-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .bike-card {
+    align-items: center;
+  }
+
+  .bike-name,
+  .bike-price {
+    text-align: center;
+  }
+
+  .diferencial {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  #security-items .title,
+  #partners-items .title,
+  #technology-items .title {
+    font-size: 2rem;
+  }
+
+  .price-value strong {
+    font-size: 1.8rem;
+  }
+
+  .price-features {
+    font-size: 0.9rem;
+  }
+
+  .partner img {
+    max-width: 120px;
+  }
+
+  #items .title {
+    font-size: 1.9rem;
+  }
+
+  .bike-name {
+    font-size: 1rem;
+  }
+
+  .bike-price {
+    font-size: 0.95rem;
+  }
+
+  #technology-items .description {
+    display: block;
+    margin-top: 0.5rem;
+    width: 350px;
+  }
+
+  #technology-items .select-model {
+    margin-top: 7rem;
+  }
+
+  .diferencial {
+    display: none;
+  }
+}

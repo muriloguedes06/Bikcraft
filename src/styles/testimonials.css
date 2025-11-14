@@ -1,0 +1,21 @@
+#testimonials-items {
+  display: flex;
+  background: #ffbb00;
+}
+
+#testimonials-items .title {
+  display: block;
+  width: 553px;
+  font-size: 34px;
+  font-weight: 900;
+  margin: auto;
+  color: #332200;
+}
+
+#testimonials-items .sub-title {
+  display: flex;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 100px;
+  color: #664400;
+}

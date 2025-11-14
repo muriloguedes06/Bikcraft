@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+#technology {
+  display: flex;
+  background: #111111;
+  min-height: calc(100vh - 96px);
+}
+
+#technology-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#technology-items .title {
+  color: #b2b2b2;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0px 0 8px 0;
+}
+
+#technology-items .sub-title {
+  color: #ffffff;
+  font-size: 62px;
+  font-weight: 600;
+  width: 538px;
+  margin: 0;
+}
+
+#technology-items .description {
+  color: #b2b2b2;
+  width: 534px;
+  height: 180px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+#technology-items .select-model {
+  color: #ffbb00;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#technology-items .select-model:hover {
+  color: #ffbb00d5;
+}
+
+.features {
+  margin-top: 80px;
+}
+
+#features-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 260px;
+}
+
+.feature-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 12px;
+}
+
+.feature-title {
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.feature-desc {
+  margin: 0;
+  color: #b2b2b2;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.diferencial {
+  display: flex;
+  position: absolute;
+  max-height: calc(100vh - 96px);
+  margin-left: 50%;
+}
