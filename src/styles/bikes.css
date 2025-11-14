@@ -1,8 +1,6 @@
-/* ======= Seção de bikes ======= */
-
 #items {
   min-height: calc(100vh - 96px);
-  padding: 100px 100px 80px; /* top 100px como o seu margin anterior */
+  padding: 100px 100px 80px;
 }
 
 #items .title {
@@ -16,10 +14,9 @@
   color: #ffbb00;
 }
 
-/* Grid com os cards das bikes */
 .bikes-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 colunas no desktop */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 32px;
 }
 
@@ -30,14 +27,12 @@
   align-items: flex-start;
 }
 
-/* Imagem da bike (reaproveitando sua classe .items-bikes) */
 .items-bikes {
   display: block;
   width: 100%;
   height: auto;
   border-radius: 5px;
 
-  /* animação que você já tinha */
   will-change: transform, box-shadow;
   transform: scale(1);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
